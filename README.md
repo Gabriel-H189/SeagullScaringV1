@@ -12,7 +12,8 @@ Recommended settings: 2700 seconds (timer), 60 seconds (min time), 300 seconds (
 ### Install instructions
 1. Unzip the program folder.
 2. Set up the virtual environment and install dependencies. (see below)
-3. Copy a `media.zip` to the program folder, run `main.py`, click "about" and then click "extract gull effects".
+3. Copy a `media.zip` to the program folder and unzip it with your program of choice.
+4. Run `python main.py`
 
 ### Installing dependencies
 1. Run this command to create a virtual environment: `python -m venv .venv`
