@@ -21,10 +21,25 @@ The recommended settings are meant to be used during 1 lunchtime.
 3. Copy a `media.zip` to the program folder, then unzip it with your program of choice.
 
 ### Installing dependencies
-1. Run this command to create a virtual environment: `python -m venv .venv`
-2. Activate the environment: `.venv\Scripts\activate.bat`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run program: `python main.py`
+1. Run this command to create a virtual environment: 
+```
+python -m venv .venv
+```
+
+2. Activate the environment: 
+```
+.venv\Scripts\activate.bat
+```
+
+3. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+4. Run program: 
+```
+python main.py
+```
 
 ### Config file documentation
 In the program directory, there is a file called `ss_config.ini`.
