@@ -1,12 +1,17 @@
 # Seagull Scaring V1
+A seagull scaring program with CLI interface written in Python.  
 By Gabriel Alonso-Holt.
 
-A seagull scaring program with CLI interface written in Python.
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Static Badge](https://img.shields.io/badge/formatter-black-formatter)
+![Static Badge](https://img.shields.io/badge/linter-pylint-linter)
+![Static Badge](https://img.shields.io/badge/type_checker-mypy-blue)
+
+> [!WARNING]
+> Seagull Scaring V1 will reach end of support in July 2026. There will be no further updates to the program after this date.
 
 The days of having me run around scaring seagulls manually are over!
 With Seagull Scaring, you can just start the program, choose a time to scare seagulls for, and relax as the seagulls fly away when you want.
-
-**Before you proceed, sound effects are not included!**
 
 Recommended settings: 2700 seconds (timer), 60 seconds (min time), 300 seconds (max time), seagull (sound).
 
@@ -67,3 +72,40 @@ Valid settings:
 `use_this_config (str)`: Whether or not to use the config file. Valid options: yes/no.
 
 `ask_log_file (str)`: Whether or not to ask to save the results to a log file. Valid options: yes/no.
+
+### Building from source
+Clone the repository:
+```
+git clone https://github.com/Gabriel-H189/SeagullScaringV1
+cd SeagullScaringV1
+```
+
+Create a virtual environment: 
+```
+python -m venv .venv
+```
+
+Activate the environment: 
+```
+.venv\Scripts\activate.bat
+```
+
+Install prerequisites:
+```
+pip install pyinstaller
+```
+
+Install dependencies: 
+```
+pip install -r requirements.txt
+```
+
+Build (this will take a few minutes):
+```
+pyinstaller main.py --onefile -i seagull.ico --name SeagullScaringV1 --add-data=ss_config.ini:ss_config.ini
+```
+
+Run: 
+```
+dist/SeagullScaringV1.exe
+```
